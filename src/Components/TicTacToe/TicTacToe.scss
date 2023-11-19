@@ -34,4 +34,31 @@
   h2 {
     font-size: 1.5rem;
   }
+  @media(max-width: 550px) {
+    .tic-tac-toe-board {
+      margin-top: 15px;
+      height: 24.75rem;
+      width: 23.25rem;
+
+      .tic-tac-toe-boxes {
+        height: 7.5rem;
+        width: 7.5rem;
+      }
+    }
+  }
+
+  @media(max-width: 430px) {
+
+    .tic-tac-toe-board {
+      margin-top: 10px;
+      height: 16.5rem;
+      width: 15.5rem;
+
+      .tic-tac-toe-boxes {
+        height: 5rem;
+        width: 5rem;
+      }
+    }
+  }
 }
+

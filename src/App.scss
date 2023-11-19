@@ -1,5 +1,5 @@
 .app {
-  width: 100vw;
+  width: 100vw !important;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,6 +28,7 @@
       p {
         font-size: 2rem;
         margin: 0.25rem;
+        text-align: center;
       }
 
       .app-logo {
@@ -36,10 +37,10 @@
       }
     }
 
-      .accessibility-icon {
-        height: 2.8rem;
-        border-radius: 50%;
-      }
+    .accessibility-icon {
+      height: 2.8rem;
+      border-radius: 50%;
+    }
   }
 
   h1 {
@@ -63,6 +64,7 @@
       background-color: transparent;
       border: transparent;
     }
+
     .sound-button:hover {
       background-color: transparent;
       border: transparent;
@@ -78,7 +80,45 @@
     margin-top: 90px;
     position: relative;
     display: flex;
-    width: 28rem;
-    justify-content: space-between;
+    width: 100vw;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  @media(max-width: 603px) {
+    .header-wrapper {
+      flex-direction: column;
+    }
+
+    .credentials-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
+
+  @media(max-width: 430px) {
+    .app {
+      .header-wrapper {
+        width: 10rem;
+
+        .logo-wrapper {
+          justify-content: center;
+          align-items: center;
+
+          p {
+            font-size: 1rem;
+            margin: 0.25rem;
+            text-align: center;
+          }
+
+          .app-logo {
+            height: 2.5rem;
+            width: auto;
+          }
+        }
+      }
+    }
   }
 }
+
