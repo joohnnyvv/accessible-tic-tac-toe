@@ -11,7 +11,7 @@ import {useSound as useSoundContext} from "./Context/SoundContext";
 
 function App() {
 
-    const {activePalette, setActivePalette} = usePalette();
+    const {activePalette} = usePalette();
     const {isSoundEnabled, toggleSound} = useSoundContext();
 
     return (
