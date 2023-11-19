@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from 'react';
-import {Dropdown, DropdownDivider, Form} from "react-bootstrap";
+import React, {useEffect} from 'react';
+import {Dropdown, DropdownDivider} from "react-bootstrap";
 import {Palette, Palettes, usePalette} from "../../../Context/PaletteContext";
 import './DropdownMenu.scss';
 // @ts-ignore
@@ -92,7 +92,7 @@ function DropdownMenu() {
             const parsedFontSize = JSON.parse(storedFontSize);
             handleFontSizeChange(parsedFontSize);
         }
-    }, []);
+    }, [setActivePalette]);
 
     const handlePaletteChange = (palette: Palette) => {
         setActivePalette(palette);
