@@ -1,26 +1,58 @@
 .app {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
 
   .header-wrapper {
-    position: sticky;
+    position: relative;
     z-index: 9;
     top: 1.25rem;
-    width: 26rem;
+    width: 100vw;
     height: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
 
-    p {
-      font-size: 2rem;
-    }
-
-    .app-logo {
+    .logo-wrapper {
+      display: flex;
+      align-items: center;
       height: 5rem;
-      width: auto;
+      width: 26rem;
+      justify-content: space-between;
+
+      p {
+        font-size: 2rem;
+        margin: 0.25rem;
+      }
+
+      .app-logo {
+        height: 5rem;
+        width: auto;
+      }
     }
+
+    .dropdown-button {
+      background-color: transparent;
+      border: transparent;
+      align-items: center;
+
+      .accessibility-icon {
+        height: 2.8rem;
+        border-radius: 50%;
+      }
+    }
+
+    .dropdown-menu {
+      border-width: 2px !important;
+    }
+  }
+
+  h1 {
+    font-size: 6rem;
   }
 }
