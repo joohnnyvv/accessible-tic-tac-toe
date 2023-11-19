@@ -2,7 +2,7 @@ import React from 'react';
 import {usePalette} from "../../../Context/PaletteContext";
 
 function CircleIcon() {
-    const { activePalette, setActivePalette } = usePalette();
+    const { activePalette } = usePalette();
 
     return (
         <h1 style={{color: activePalette.primaryColor}}>O</h1>

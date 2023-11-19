@@ -32,7 +32,7 @@ import useSound from "use-sound";
 import {useSound as useSoundContext} from "../../Context/SoundContext";
 
 function TicTacToe() {
-    const {activePalette, setActivePalette} = usePalette();
+    const {activePalette} = usePalette();
     const {isSoundEnabled} = useSoundContext();
 
     const initialData = ['', '', '', '', '', '', '', '', ''];

@@ -82,6 +82,7 @@ function DropdownMenu() {
     };
 
     useEffect(() => {
+        console.log('!!!!');
         const storedPalette = localStorage.getItem('chosenPalette');
         if (storedPalette) {
             const parsedPalette = JSON.parse(storedPalette);
