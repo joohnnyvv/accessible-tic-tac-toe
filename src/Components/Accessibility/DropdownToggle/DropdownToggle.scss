@@ -1,0 +1,19 @@
+.dropdown-button {
+  background-color: transparent;
+  border: transparent;
+  align-items: center;
+}
+
+.dropdown-button:focus {
+  background-color: transparent;
+  border: transparent;
+}
+.dropdown-button:hover {
+  background-color: transparent;
+  border: transparent;
+}
+
+.btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+  background-color: transparent !important;
+  border: transparent !important;
+}

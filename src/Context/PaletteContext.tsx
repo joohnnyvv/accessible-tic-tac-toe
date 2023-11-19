@@ -1,4 +1,6 @@
 import {createContext, ReactNode, useContext, useState} from 'react';
+// @ts-ignore
+import defaultContrastSound from "../Assets/s-default-contrast.mp3";
 
 export type Palette = {
     uiBackground: string;
@@ -6,6 +8,7 @@ export type Palette = {
     secondaryColor: string;
     crossingColor: string;
     label: string;
+    sound: any;
 };
 
 export type Palettes = {
@@ -29,7 +32,8 @@ export const PaletteProvider: React.FC<{ children: ReactNode }> = ({children}) =
         primaryColor: '#c2c7c7',
         secondaryColor: '#035ca4',
         crossingColor: '#b04d4d',
-        label: 'Default'
+        label: 'Default',
+        sound: defaultContrastSound,
     };
 
     const [activePalette, setActivePalette] = useState<Palette>(defaultContrast);

@@ -4,6 +4,7 @@ import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {PaletteProvider} from "./Context/PaletteContext";
+import {SoundProvider} from "./Context/SoundContext";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -11,7 +12,9 @@ const root = ReactDOM.createRoot(
 root.render(
     <React.StrictMode>
         <PaletteProvider>
-            <App/>
+            <SoundProvider>
+                <App/>
+            </SoundProvider>
         </PaletteProvider>
     </React.StrictMode>
 );

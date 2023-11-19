@@ -16,7 +16,7 @@
     justify-content: space-between;
     align-items: center;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 40px;
 
     .logo-wrapper {
       display: flex;
@@ -36,23 +36,49 @@
       }
     }
 
-    .dropdown-button {
-      background-color: transparent;
-      border: transparent;
-      align-items: center;
-
       .accessibility-icon {
         height: 2.8rem;
         border-radius: 50%;
       }
-    }
-
-    .dropdown-menu {
-      border-width: 2px !important;
-    }
   }
 
   h1 {
     font-size: 6rem;
+  }
+
+  .settings-wrapper {
+    display: flex;
+    align-items: center;
+    width: 8rem;
+    justify-content: space-between;
+
+    .sound-button {
+      background-color: transparent;
+      border: transparent;
+      align-items: center;
+      height: 100%;
+    }
+
+    .sound-button:focus {
+      background-color: transparent;
+      border: transparent;
+    }
+    .sound-button:hover {
+      background-color: transparent;
+      border: transparent;
+    }
+
+    .btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+      background-color: transparent !important;
+      border: transparent !important;
+    }
+  }
+
+  .credentials-container {
+    margin-top: 90px;
+    position: relative;
+    display: flex;
+    width: 28rem;
+    justify-content: space-between;
   }
 }
